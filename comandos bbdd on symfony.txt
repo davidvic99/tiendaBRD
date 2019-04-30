@@ -1,0 +1,8 @@
+php bin/console doctrine:mapping:import --force AppBundle xml   -> importamos la bbdd a orm
+
+php bin/console doctrine:mapping:convert annotation ./src -> generamos entidades vacias
+
+php bin/console doctrine:generate:entities AppBundle ->Generamos setters y getters
+
+
+
