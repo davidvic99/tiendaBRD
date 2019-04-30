@@ -27,4 +27,13 @@ class DefaultController extends Controller
         $numero  = rand(1,2);
         return $this->render('frontal/inicio.html.twig', ["numero"=>$numero]);
     }
+
+    /**
+     * @Route("/productos", name="productos")
+     */
+    public function productosAction(Request $request)
+    {
+        $productos= 0;
+        return $this->render('frontal/inicio.html.twig', ["numero"=>$productos]);
+    }
 }
