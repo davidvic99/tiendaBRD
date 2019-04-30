@@ -22,49 +22,49 @@ class __TwigTemplate_8ed7200cb1b93f7b5f4554789de54dd9bb3f1fea273d6dcc196b73090c8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ec91395516a8609188da2803fd730c1ebd40bcd81388eeec2c0fb61eac2fb463 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ec91395516a8609188da2803fd730c1ebd40bcd81388eeec2c0fb61eac2fb463->enter($__internal_ec91395516a8609188da2803fd730c1ebd40bcd81388eeec2c0fb61eac2fb463_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "frontal/productos.html.twig"));
+        $__internal_e152908bc8e0c0383aed28fee75df575485c0d77973455ddd4fa9478bf8492fd = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_e152908bc8e0c0383aed28fee75df575485c0d77973455ddd4fa9478bf8492fd->enter($__internal_e152908bc8e0c0383aed28fee75df575485c0d77973455ddd4fa9478bf8492fd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "frontal/productos.html.twig"));
 
-        $__internal_335a52526cb0696a6c7acc0a2531cc76404dc5eb5f16b6df2aaa78689d4812bb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_335a52526cb0696a6c7acc0a2531cc76404dc5eb5f16b6df2aaa78689d4812bb->enter($__internal_335a52526cb0696a6c7acc0a2531cc76404dc5eb5f16b6df2aaa78689d4812bb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "frontal/productos.html.twig"));
+        $__internal_5e297036320ada97e76ee9d71134a94f208038b08aed0d8ff3fe3fffd4aa2f51 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5e297036320ada97e76ee9d71134a94f208038b08aed0d8ff3fe3fffd4aa2f51->enter($__internal_5e297036320ada97e76ee9d71134a94f208038b08aed0d8ff3fe3fffd4aa2f51_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "frontal/productos.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_ec91395516a8609188da2803fd730c1ebd40bcd81388eeec2c0fb61eac2fb463->leave($__internal_ec91395516a8609188da2803fd730c1ebd40bcd81388eeec2c0fb61eac2fb463_prof);
+        $__internal_e152908bc8e0c0383aed28fee75df575485c0d77973455ddd4fa9478bf8492fd->leave($__internal_e152908bc8e0c0383aed28fee75df575485c0d77973455ddd4fa9478bf8492fd_prof);
 
         
-        $__internal_335a52526cb0696a6c7acc0a2531cc76404dc5eb5f16b6df2aaa78689d4812bb->leave($__internal_335a52526cb0696a6c7acc0a2531cc76404dc5eb5f16b6df2aaa78689d4812bb_prof);
+        $__internal_5e297036320ada97e76ee9d71134a94f208038b08aed0d8ff3fe3fffd4aa2f51->leave($__internal_5e297036320ada97e76ee9d71134a94f208038b08aed0d8ff3fe3fffd4aa2f51_prof);
 
     }
 
     // line 2
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_d70f20259f6410540507aa4fa664fdbac4bcefe439822951374d16572981d79b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d70f20259f6410540507aa4fa664fdbac4bcefe439822951374d16572981d79b->enter($__internal_d70f20259f6410540507aa4fa664fdbac4bcefe439822951374d16572981d79b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_8d8a6169c46117dc43625351dd9598c49351cfce2f5eb7dfe73231632b461db9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_8d8a6169c46117dc43625351dd9598c49351cfce2f5eb7dfe73231632b461db9->enter($__internal_8d8a6169c46117dc43625351dd9598c49351cfce2f5eb7dfe73231632b461db9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        $__internal_62ecee6a82234331cb5bd42f55ac0384a4b399991b518a3255d7d852676b686c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_62ecee6a82234331cb5bd42f55ac0384a4b399991b518a3255d7d852676b686c->enter($__internal_62ecee6a82234331cb5bd42f55ac0384a4b399991b518a3255d7d852676b686c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_003342a67c287399991807fc896a4aee60047f22f88721a09a336e2f7e336292 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_003342a67c287399991807fc896a4aee60047f22f88721a09a336e2f7e336292->enter($__internal_003342a67c287399991807fc896a4aee60047f22f88721a09a336e2f7e336292_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         echo "<link =\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/csspropio.css"), "html", null, true);
         echo "\"";
         
-        $__internal_62ecee6a82234331cb5bd42f55ac0384a4b399991b518a3255d7d852676b686c->leave($__internal_62ecee6a82234331cb5bd42f55ac0384a4b399991b518a3255d7d852676b686c_prof);
+        $__internal_003342a67c287399991807fc896a4aee60047f22f88721a09a336e2f7e336292->leave($__internal_003342a67c287399991807fc896a4aee60047f22f88721a09a336e2f7e336292_prof);
 
         
-        $__internal_d70f20259f6410540507aa4fa664fdbac4bcefe439822951374d16572981d79b->leave($__internal_d70f20259f6410540507aa4fa664fdbac4bcefe439822951374d16572981d79b_prof);
+        $__internal_8d8a6169c46117dc43625351dd9598c49351cfce2f5eb7dfe73231632b461db9->leave($__internal_8d8a6169c46117dc43625351dd9598c49351cfce2f5eb7dfe73231632b461db9_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_0d8e9af25167dd7bf25aa270fdb1672c7e1ebd91e7870bf5d04dfa7135a0bda1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_0d8e9af25167dd7bf25aa270fdb1672c7e1ebd91e7870bf5d04dfa7135a0bda1->enter($__internal_0d8e9af25167dd7bf25aa270fdb1672c7e1ebd91e7870bf5d04dfa7135a0bda1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_3f5834081a73d0b5eb6bf7e87884d923f3eee70200cbd4e021da7705be280baa = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_3f5834081a73d0b5eb6bf7e87884d923f3eee70200cbd4e021da7705be280baa->enter($__internal_3f5834081a73d0b5eb6bf7e87884d923f3eee70200cbd4e021da7705be280baa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_62dd25a7213a7d0a9df8ca8bb8ad365b76f86ac551247b7152026d643e830f34 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_62dd25a7213a7d0a9df8ca8bb8ad365b76f86ac551247b7152026d643e830f34->enter($__internal_62dd25a7213a7d0a9df8ca8bb8ad365b76f86ac551247b7152026d643e830f34_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_108ffcda82832fa25f84f93b265720d2620e1946acfef5971dbc39117dd35914 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_108ffcda82832fa25f84f93b265720d2620e1946acfef5971dbc39117dd35914->enter($__internal_108ffcda82832fa25f84f93b265720d2620e1946acfef5971dbc39117dd35914_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "
@@ -123,15 +123,95 @@ class __TwigTemplate_8ed7200cb1b93f7b5f4554789de54dd9bb3f1fea273d6dcc196b73090c8
             </div>
           </div>
         </div>
-      </div>   </div>
+      </div>   <div class=\"section text-center\">
+        <h2 class=\"title\">Here is our team</h2>
+        <div class=\"team\">
+          <div class=\"row\">
+            <div class=\"col-md-4\">
+              <div class=\"team-player\">
+                <div class=\"card card-plain\">
+                  <div class=\"col-md-6 ml-auto mr-auto\">
+                    <img src=\"";
+        // line 65
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/faces/avatar.jpg"), "html", null, true);
+        echo "\" alt=\"Thumbnail Image\" class=\"img-raised rounded-circle img-fluid\">
+                  </div>
+                  <h4 class=\"card-title\">Gigi Hadid
+                    <br>
+                    <small class=\"card-description text-muted\">Model</small>
+                  </h4>
+                  <div class=\"card-body\">
+                    <p class=\"card-description\">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                      <a href=\"#\">links</a> for people to be able to follow them outside the site.</p>
+                  </div>
+                  <div class=\"card-footer justify-content-center\">
+                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-twitter\"></i></a>
+                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-instagram\"></i></a>
+                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-facebook-square\"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=\"col-md-4\">
+              <div class=\"team-player\">
+                <div class=\"card card-plain\">
+                  <div class=\"col-md-6 ml-auto mr-auto\">
+                    <img src=\"";
+        // line 87
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/faces/christian.jpg"), "html", null, true);
+        echo "\" alt=\"Thumbnail Image\" class=\"img-raised rounded-circle img-fluid\">
+                  </div>
+                  <h4 class=\"card-title\">Christian Louboutin
+                    <br>
+                    <small class=\"card-description text-muted\">Designer</small>
+                  </h4>
+                  <div class=\"card-body\">
+                    <p class=\"card-description\">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                      <a href=\"#\">links</a> for people to be able to follow them outside the site.</p>
+                  </div>
+                  <div class=\"card-footer justify-content-center\">
+                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-twitter\"></i></a>
+                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-linkedin\"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=\"col-md-4\">
+              <div class=\"team-player\">
+                <div class=\"card card-plain\">
+                  <div class=\"col-md-6 ml-auto mr-auto\">
+                    <img src=\"";
+        // line 108
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/faces/kendall.jpg"), "html", null, true);
+        echo "\" alt=\"Thumbnail Image\" class=\"img-raised rounded-circle img-fluid\">
+                  </div>
+                  <h4 class=\"card-title\">Kendall Jenner
+                    <br>
+                    <small class=\"card-description text-muted\">Model</small>
+                  </h4>
+                  <div class=\"card-body\">
+                    <p class=\"card-description\">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                      <a href=\"#\">links</a> for people to be able to follow them outside the site.</p>
+                  </div>
+                  <div class=\"card-footer justify-content-center\">
+                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-twitter\"></i></a>
+                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-instagram\"></i></a>
+                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-facebook-square\"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> </div></div></div>
 
 
 ";
         
-        $__internal_62dd25a7213a7d0a9df8ca8bb8ad365b76f86ac551247b7152026d643e830f34->leave($__internal_62dd25a7213a7d0a9df8ca8bb8ad365b76f86ac551247b7152026d643e830f34_prof);
+        $__internal_108ffcda82832fa25f84f93b265720d2620e1946acfef5971dbc39117dd35914->leave($__internal_108ffcda82832fa25f84f93b265720d2620e1946acfef5971dbc39117dd35914_prof);
 
         
-        $__internal_0d8e9af25167dd7bf25aa270fdb1672c7e1ebd91e7870bf5d04dfa7135a0bda1->leave($__internal_0d8e9af25167dd7bf25aa270fdb1672c7e1ebd91e7870bf5d04dfa7135a0bda1_prof);
+        $__internal_3f5834081a73d0b5eb6bf7e87884d923f3eee70200cbd4e021da7705be280baa->leave($__internal_3f5834081a73d0b5eb6bf7e87884d923f3eee70200cbd4e021da7705be280baa_prof);
 
     }
 
@@ -147,7 +227,7 @@ class __TwigTemplate_8ed7200cb1b93f7b5f4554789de54dd9bb3f1fea273d6dcc196b73090c8
 
     public function getDebugInfo()
     {
-        return array (  73 => 5,  70 => 4,  61 => 3,  41 => 2,  11 => 1,);
+        return array (  185 => 108,  161 => 87,  136 => 65,  73 => 5,  70 => 4,  61 => 3,  41 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -216,7 +296,78 @@ class __TwigTemplate_8ed7200cb1b93f7b5f4554789de54dd9bb3f1fea273d6dcc196b73090c8
             </div>
           </div>
         </div>
-      </div>   </div>
+      </div>   <div class=\"section text-center\">
+        <h2 class=\"title\">Here is our team</h2>
+        <div class=\"team\">
+          <div class=\"row\">
+            <div class=\"col-md-4\">
+              <div class=\"team-player\">
+                <div class=\"card card-plain\">
+                  <div class=\"col-md-6 ml-auto mr-auto\">
+                    <img src=\"{{ asset ('img/faces/avatar.jpg')}}\" alt=\"Thumbnail Image\" class=\"img-raised rounded-circle img-fluid\">
+                  </div>
+                  <h4 class=\"card-title\">Gigi Hadid
+                    <br>
+                    <small class=\"card-description text-muted\">Model</small>
+                  </h4>
+                  <div class=\"card-body\">
+                    <p class=\"card-description\">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                      <a href=\"#\">links</a> for people to be able to follow them outside the site.</p>
+                  </div>
+                  <div class=\"card-footer justify-content-center\">
+                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-twitter\"></i></a>
+                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-instagram\"></i></a>
+                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-facebook-square\"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=\"col-md-4\">
+              <div class=\"team-player\">
+                <div class=\"card card-plain\">
+                  <div class=\"col-md-6 ml-auto mr-auto\">
+                    <img src=\"{{ asset ('img/faces/christian.jpg')}}\" alt=\"Thumbnail Image\" class=\"img-raised rounded-circle img-fluid\">
+                  </div>
+                  <h4 class=\"card-title\">Christian Louboutin
+                    <br>
+                    <small class=\"card-description text-muted\">Designer</small>
+                  </h4>
+                  <div class=\"card-body\">
+                    <p class=\"card-description\">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                      <a href=\"#\">links</a> for people to be able to follow them outside the site.</p>
+                  </div>
+                  <div class=\"card-footer justify-content-center\">
+                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-twitter\"></i></a>
+                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-linkedin\"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=\"col-md-4\">
+              <div class=\"team-player\">
+                <div class=\"card card-plain\">
+                  <div class=\"col-md-6 ml-auto mr-auto\">
+                    <img src=\"{{asset ('img/faces/kendall.jpg')}}\" alt=\"Thumbnail Image\" class=\"img-raised rounded-circle img-fluid\">
+                  </div>
+                  <h4 class=\"card-title\">Kendall Jenner
+                    <br>
+                    <small class=\"card-description text-muted\">Model</small>
+                  </h4>
+                  <div class=\"card-body\">
+                    <p class=\"card-description\">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                      <a href=\"#\">links</a> for people to be able to follow them outside the site.</p>
+                  </div>
+                  <div class=\"card-footer justify-content-center\">
+                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-twitter\"></i></a>
+                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-instagram\"></i></a>
+                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-facebook-square\"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> </div></div></div>
 
 
 {% endblock %}", "frontal/productos.html.twig", "C:\\xampp\\htdocs\\Symfony\\tienda\\app\\Resources\\views\\frontal\\productos.html.twig");
