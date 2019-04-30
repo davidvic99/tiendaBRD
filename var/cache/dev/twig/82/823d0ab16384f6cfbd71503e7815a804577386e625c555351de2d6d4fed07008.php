@@ -21,29 +21,29 @@ class __TwigTemplate_663be8deb380db1f5de9cc9e0656f343db311e96d029913c87f2ab8429e
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_bd6fea616cb567b1924d9a977730baf2231206f3ba3faa9cecd3b52f3aecf016 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_bd6fea616cb567b1924d9a977730baf2231206f3ba3faa9cecd3b52f3aecf016->enter($__internal_bd6fea616cb567b1924d9a977730baf2231206f3ba3faa9cecd3b52f3aecf016_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "frontal/inicio.html.twig"));
+        $__internal_9e16ecdbd4695d9285c7bfe80804fb294d373be4afd3fa708ad10ae12e148d33 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_9e16ecdbd4695d9285c7bfe80804fb294d373be4afd3fa708ad10ae12e148d33->enter($__internal_9e16ecdbd4695d9285c7bfe80804fb294d373be4afd3fa708ad10ae12e148d33_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "frontal/inicio.html.twig"));
 
-        $__internal_bfe0c4bb05735df0afb575d1ab7fbe11135e840d744c5c490c81d8466d163450 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_bfe0c4bb05735df0afb575d1ab7fbe11135e840d744c5c490c81d8466d163450->enter($__internal_bfe0c4bb05735df0afb575d1ab7fbe11135e840d744c5c490c81d8466d163450_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "frontal/inicio.html.twig"));
+        $__internal_db1c845486037ac60615dee9ac5b61029c1acb7dc0004421576901140f89107a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_db1c845486037ac60615dee9ac5b61029c1acb7dc0004421576901140f89107a->enter($__internal_db1c845486037ac60615dee9ac5b61029c1acb7dc0004421576901140f89107a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "frontal/inicio.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_bd6fea616cb567b1924d9a977730baf2231206f3ba3faa9cecd3b52f3aecf016->leave($__internal_bd6fea616cb567b1924d9a977730baf2231206f3ba3faa9cecd3b52f3aecf016_prof);
+        $__internal_9e16ecdbd4695d9285c7bfe80804fb294d373be4afd3fa708ad10ae12e148d33->leave($__internal_9e16ecdbd4695d9285c7bfe80804fb294d373be4afd3fa708ad10ae12e148d33_prof);
 
         
-        $__internal_bfe0c4bb05735df0afb575d1ab7fbe11135e840d744c5c490c81d8466d163450->leave($__internal_bfe0c4bb05735df0afb575d1ab7fbe11135e840d744c5c490c81d8466d163450_prof);
+        $__internal_db1c845486037ac60615dee9ac5b61029c1acb7dc0004421576901140f89107a->leave($__internal_db1c845486037ac60615dee9ac5b61029c1acb7dc0004421576901140f89107a_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_6117eefc166964862e546970535e9d72238898e381f05565f2572ea1438740a8 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_6117eefc166964862e546970535e9d72238898e381f05565f2572ea1438740a8->enter($__internal_6117eefc166964862e546970535e9d72238898e381f05565f2572ea1438740a8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_2dac2b81bee8f64a6640699ac0c86e2dee1952772a4ebec23877d1b3dc25eb63 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_2dac2b81bee8f64a6640699ac0c86e2dee1952772a4ebec23877d1b3dc25eb63->enter($__internal_2dac2b81bee8f64a6640699ac0c86e2dee1952772a4ebec23877d1b3dc25eb63_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_ed59808d66db645299c27be345e4f7c73ec7006bbe1abdbcb8a12faecc450ec2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ed59808d66db645299c27be345e4f7c73ec7006bbe1abdbcb8a12faecc450ec2->enter($__internal_ed59808d66db645299c27be345e4f7c73ec7006bbe1abdbcb8a12faecc450ec2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_9cf766a0ce96de74e206985ba4f65440283378d31f81c6f5f86d923d271b9502 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_9cf766a0ce96de74e206985ba4f65440283378d31f81c6f5f86d923d271b9502->enter($__internal_9cf766a0ce96de74e206985ba4f65440283378d31f81c6f5f86d923d271b9502_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
         echo " <div class=\"page-header header-filter clear-filter purple-filter\" data-parallax=\"true\" style=\"background-image: url('";
@@ -53,8 +53,8 @@ class __TwigTemplate_663be8deb380db1f5de9cc9e0656f343db311e96d029913c87f2ab8429e
       <div class=\"row\">
         <div class=\"col-md-8 ml-auto mr-auto\">
           <div class=\"brand\">
-            <h1>Material Kit.</h1>
-            <h3>A Badass Bootstrap 4 UI Kit based on Material Design.</h3>
+            <h1>Tienda de la tripe alianza.</h1>
+            <h3>Esto va a quedar dabutens.</h3>
           </div>
         </div>
       </div>
@@ -62,10 +62,10 @@ class __TwigTemplate_663be8deb380db1f5de9cc9e0656f343db311e96d029913c87f2ab8429e
   </div>
 ";
         
-        $__internal_ed59808d66db645299c27be345e4f7c73ec7006bbe1abdbcb8a12faecc450ec2->leave($__internal_ed59808d66db645299c27be345e4f7c73ec7006bbe1abdbcb8a12faecc450ec2_prof);
+        $__internal_9cf766a0ce96de74e206985ba4f65440283378d31f81c6f5f86d923d271b9502->leave($__internal_9cf766a0ce96de74e206985ba4f65440283378d31f81c6f5f86d923d271b9502_prof);
 
         
-        $__internal_6117eefc166964862e546970535e9d72238898e381f05565f2572ea1438740a8->leave($__internal_6117eefc166964862e546970535e9d72238898e381f05565f2572ea1438740a8_prof);
+        $__internal_2dac2b81bee8f64a6640699ac0c86e2dee1952772a4ebec23877d1b3dc25eb63->leave($__internal_2dac2b81bee8f64a6640699ac0c86e2dee1952772a4ebec23877d1b3dc25eb63_prof);
 
     }
 
@@ -101,8 +101,8 @@ class __TwigTemplate_663be8deb380db1f5de9cc9e0656f343db311e96d029913c87f2ab8429e
       <div class=\"row\">
         <div class=\"col-md-8 ml-auto mr-auto\">
           <div class=\"brand\">
-            <h1>Material Kit.</h1>
-            <h3>A Badass Bootstrap 4 UI Kit based on Material Design.</h3>
+            <h1>Tienda de la tripe alianza.</h1>
+            <h3>Esto va a quedar dabutens.</h3>
           </div>
         </div>
       </div>

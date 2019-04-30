@@ -33,7 +33,10 @@ class DefaultController extends Controller
      */
     public function productosAction(Request $request)
     {
-        $productos= 0;
-        return $this->render('frontal/inicio.html.twig', ["numero"=>$productos]);
+       
+
+
+
+        return $this->render('frontal/productos.html.twig', []);
     }
 }
