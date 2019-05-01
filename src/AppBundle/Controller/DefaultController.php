@@ -5,6 +5,10 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\Tools\Setup;
+use AppBundle\Entity\Usuarios;
+use AppBundle\Entity\Productos;
 
 class DefaultController extends Controller
 {
@@ -14,9 +18,7 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
         
-        return $this->render('default/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-        ]);
+        return $this->render('frontal/inicio.html.twig');
     }
     /**
      * @Route("/inicio", name="inicio")
@@ -33,10 +35,16 @@ class DefaultController extends Controller
      */
     public function productosAction(Request $request)
     {
-       
+    
+        $entityManager = $this->get('doctrine.orm.app_entity_manager');
+    
+        $selectProductos = $entityManager->createQuery(
+            'SELECT i FROM AppBundle:Productos i'
+        );
 
+        $productos = $selectProductos->getResult();
 
-
-        return $this->render('frontal/productos.html.twig', []);
+        
+        return $this->render('frontal/productos.html.twig', ["producto"=>$productos]);
     }
 }

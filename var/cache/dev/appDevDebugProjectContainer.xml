@@ -269,9 +269,9 @@
     <parameter key="doctrine.dbal.events.oracle_session_init.class">Doctrine\DBAL\Event\Listeners\OracleSessionInit</parameter>
     <parameter key="doctrine.class">Doctrine\Bundle\DoctrineBundle\Registry</parameter>
     <parameter key="doctrine.entity_managers" type="collection">
-      <parameter key="default">doctrine.orm.default_entity_manager</parameter>
+      <parameter key="app">doctrine.orm.app_entity_manager</parameter>
     </parameter>
-    <parameter key="doctrine.default_entity_manager">default</parameter>
+    <parameter key="doctrine.default_entity_manager">app</parameter>
     <parameter key="doctrine.dbal.connection_factory.types" type="collection"/>
     <parameter key="doctrine.connections" type="collection">
       <parameter key="default">doctrine.dbal.default_connection</parameter>
@@ -777,7 +777,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>NkebHECwj4Q0sLRd+ZVT--</argument>
+      <argument>95kGIhofTsECb29b7Z-+m2</argument>
       <argument>C:\xampp\htdocs\Symfony\tienda\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -787,7 +787,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>NkebHECwj4Q0sLRd+ZVT--</argument>
+      <argument>95kGIhofTsECb29b7Z-+m2</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
@@ -2417,12 +2417,12 @@
     </service>
     <service id="security.authentication.listener.anonymous.main" class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
       <argument type="service" id="security.token_storage"/>
-      <argument>5cc8cdcda5d8b1.61290798</argument>
+      <argument>5cc97dac30f128.08358192</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
       <argument type="service" id="security.authentication.manager"/>
     </service>
     <service id="security.authentication.provider.anonymous.main" class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-      <argument>5cc8cdcda5d8b1.61290798</argument>
+      <argument>5cc97dac30f128.08358192</argument>
     </service>
     <service id="security.exception_listener.main" class="Symfony\Component\Security\Http\Firewall\ExceptionListener" public="false">
       <argument type="service" id="security.token_storage"/>
@@ -3002,7 +3002,7 @@
       <argument>%doctrine.connections%</argument>
       <argument>%doctrine.entity_managers%</argument>
       <argument>default</argument>
-      <argument>default</argument>
+      <argument>app</argument>
     </service>
     <service id="doctrine.twig.doctrine_extension" class="Doctrine\Bundle\DoctrineBundle\Twig\DoctrineExtension" public="false">
       <tag name="twig.extension"/>
@@ -3051,7 +3051,7 @@
         <argument type="collection">
           <argument>loadClassMetadata</argument>
         </argument>
-        <argument type="service" id="doctrine.orm.default_listeners.attach_entity_listeners"/>
+        <argument type="service" id="doctrine.orm.app_listeners.attach_entity_listeners"/>
       </call>
     </service>
     <service id="doctrine.dbal.default_connection" class="Doctrine\DBAL\Connection" public="true">
@@ -3207,23 +3207,23 @@
         <argument>doctrine:schema:validate</argument>
       </call>
     </service>
-    <service id="doctrine.orm.default_configuration" class="Doctrine\ORM\Configuration" public="false">
+    <service id="doctrine.orm.app_configuration" class="Doctrine\ORM\Configuration" public="false">
       <call method="setEntityNamespaces">
         <argument type="collection">
           <argument key="AppBundle">AppBundle\Entity</argument>
         </argument>
       </call>
       <call method="setMetadataCacheImpl">
-        <argument type="service" id="doctrine_cache.providers.doctrine.orm.default_metadata_cache"/>
+        <argument type="service" id="doctrine_cache.providers.doctrine.orm.app_metadata_cache"/>
       </call>
       <call method="setQueryCacheImpl">
-        <argument type="service" id="doctrine_cache.providers.doctrine.orm.default_query_cache"/>
+        <argument type="service" id="doctrine_cache.providers.doctrine.orm.app_query_cache"/>
       </call>
       <call method="setResultCacheImpl">
-        <argument type="service" id="doctrine_cache.providers.doctrine.orm.default_result_cache"/>
+        <argument type="service" id="doctrine_cache.providers.doctrine.orm.app_result_cache"/>
       </call>
       <call method="setMetadataDriverImpl">
-        <argument type="service" id="doctrine.orm.default_metadata_driver"/>
+        <argument type="service" id="doctrine.orm.app_metadata_driver"/>
       </call>
       <call method="setProxyDir">
         <argument>C:\xampp\htdocs\Symfony\tienda\var\cache\dev/doctrine/orm/Proxies</argument>
@@ -3247,13 +3247,13 @@
         <argument type="service" id="doctrine.orm.quote_strategy.default"/>
       </call>
       <call method="setEntityListenerResolver">
-        <argument type="service" id="doctrine.orm.default_entity_listener_resolver"/>
+        <argument type="service" id="doctrine.orm.app_entity_listener_resolver"/>
       </call>
       <call method="setRepositoryFactory">
         <argument type="service" id="doctrine.orm.container_repository_factory"/>
       </call>
     </service>
-    <service id="doctrine.orm.default_xml_metadata_driver" class="Doctrine\ORM\Mapping\Driver\SimplifiedXmlDriver" public="false">
+    <service id="doctrine.orm.app_xml_metadata_driver" class="Doctrine\ORM\Mapping\Driver\SimplifiedXmlDriver" public="false">
       <argument type="collection">
         <argument key="C:\xampp\htdocs\Symfony\tienda\src\AppBundle\Resources\config\doctrine">AppBundle\Entity</argument>
       </argument>
@@ -3261,50 +3261,50 @@
         <argument>mapping</argument>
       </call>
     </service>
-    <service id="doctrine.orm.default_metadata_driver" class="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain" public="false">
+    <service id="doctrine.orm.app_metadata_driver" class="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain" public="false">
       <call method="addDriver">
-        <argument type="service" id="doctrine.orm.default_xml_metadata_driver"/>
+        <argument type="service" id="doctrine.orm.app_xml_metadata_driver"/>
         <argument>AppBundle\Entity</argument>
       </call>
     </service>
-    <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache">
+    <service id="doctrine_cache.providers.doctrine.orm.app_metadata_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf_orm_default_97ca839b4513591dc99a4b4e7dfcc8b0f1721a05d18df2faab4a620d3084f345</argument>
+        <argument>sf_orm_app_97ca839b4513591dc99a4b4e7dfcc8b0f1721a05d18df2faab4a620d3084f345</argument>
       </call>
     </service>
-    <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache">
+    <service id="doctrine_cache.providers.doctrine.orm.app_result_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf_orm_default_97ca839b4513591dc99a4b4e7dfcc8b0f1721a05d18df2faab4a620d3084f345</argument>
+        <argument>sf_orm_app_97ca839b4513591dc99a4b4e7dfcc8b0f1721a05d18df2faab4a620d3084f345</argument>
       </call>
     </service>
-    <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache">
+    <service id="doctrine_cache.providers.doctrine.orm.app_query_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf_orm_default_97ca839b4513591dc99a4b4e7dfcc8b0f1721a05d18df2faab4a620d3084f345</argument>
+        <argument>sf_orm_app_97ca839b4513591dc99a4b4e7dfcc8b0f1721a05d18df2faab4a620d3084f345</argument>
       </call>
     </service>
-    <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\Bundle\DoctrineBundle\Mapping\ContainerAwareEntityListenerResolver">
+    <service id="doctrine.orm.app_entity_listener_resolver" class="Doctrine\Bundle\DoctrineBundle\Mapping\ContainerAwareEntityListenerResolver">
       <argument type="service" id="service_container"/>
     </service>
-    <service id="doctrine.orm.default_listeners.attach_entity_listeners" class="Doctrine\ORM\Tools\AttachEntityListenersListener">
+    <service id="doctrine.orm.app_listeners.attach_entity_listeners" class="Doctrine\ORM\Tools\AttachEntityListenersListener">
       <tag name="doctrine.event_listener" event="loadClassMetadata"/>
     </service>
-    <service id="doctrine.orm.default_manager_configurator" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator">
+    <service id="doctrine.orm.app_manager_configurator" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator">
       <argument type="collection"/>
       <argument type="collection"/>
     </service>
-    <service id="doctrine.orm.default_entity_manager" class="Doctrine\ORM\EntityManager" public="true" lazy="true">
+    <service id="doctrine.orm.app_entity_manager" class="Doctrine\ORM\EntityManager" public="true" lazy="true">
       <argument type="service" id="doctrine.dbal.default_connection"/>
-      <argument type="service" id="doctrine.orm.default_configuration"/>
+      <argument type="service" id="doctrine.orm.app_configuration"/>
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
-      <configurator service="doctrine.orm.default_manager_configurator" method="configure"/>
+      <configurator service="doctrine.orm.app_manager_configurator" method="configure"/>
     </service>
-    <service id="doctrine.orm.default_entity_manager.metadata_factory" class="Doctrine\Common\Persistence\Mapping\ClassMetadataFactory" public="false">
-      <factory service="doctrine.orm.default_entity_manager" method="getMetadataFactory"/>
+    <service id="doctrine.orm.app_entity_manager.metadata_factory" class="Doctrine\Common\Persistence\Mapping\ClassMetadataFactory" public="false">
+      <factory service="doctrine.orm.app_entity_manager" method="getMetadataFactory"/>
     </service>
-    <service id="doctrine.orm.default_entity_manager.property_info_extractor" class="Symfony\Bridge\Doctrine\PropertyInfo\DoctrineExtractor">
+    <service id="doctrine.orm.app_entity_manager.property_info_extractor" class="Symfony\Bridge\Doctrine\PropertyInfo\DoctrineExtractor">
       <tag name="property_info.list_extractor" priority="-1001"/>
       <tag name="property_info.type_extractor" priority="-999"/>
-      <argument type="service" id="doctrine.orm.default_entity_manager.metadata_factory"/>
+      <argument type="service" id="doctrine.orm.app_entity_manager.metadata_factory"/>
     </service>
     <service id="sensio_framework_extra.controller.listener" class="Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener" public="false">
       <tag name="kernel.event_subscriber"/>
@@ -3834,7 +3834,7 @@
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>QK0JDy48-L</argument>
       <argument>0</argument>
-      <argument>NkebHECwj4Q0sLRd+ZVT--</argument>
+      <argument>95kGIhofTsECb29b7Z-+m2</argument>
       <argument>C:\xampp\htdocs\Symfony\tienda\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3842,7 +3842,7 @@
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>iaRaYnI580</argument>
       <argument>0</argument>
-      <argument>NkebHECwj4Q0sLRd+ZVT--</argument>
+      <argument>95kGIhofTsECb29b7Z-+m2</argument>
       <argument>C:\xampp\htdocs\Symfony\tienda\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3850,7 +3850,7 @@
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>AZlyGxUVhm</argument>
       <argument>0</argument>
-      <argument>NkebHECwj4Q0sLRd+ZVT--</argument>
+      <argument>95kGIhofTsECb29b7Z-+m2</argument>
       <argument>C:\xampp\htdocs\Symfony\tienda\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3858,7 +3858,7 @@
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>MT+EN3bFsi</argument>
       <argument>0</argument>
-      <argument>NkebHECwj4Q0sLRd+ZVT--</argument>
+      <argument>95kGIhofTsECb29b7Z-+m2</argument>
       <argument>C:\xampp\htdocs\Symfony\tienda\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3949,14 +3949,14 @@
     <service id="Symfony\Bridge\Doctrine\RegistryInterface" alias="doctrine" public="false"/>
     <service id="database_connection" alias="doctrine.dbal.default_connection" public="true"/>
     <service id="doctrine.dbal.event_manager" alias="doctrine.dbal.default_connection.event_manager" public="false"/>
-    <service id="Doctrine\Common\Persistence\ObjectManager" alias="doctrine.orm.default_entity_manager" public="false"/>
-    <service id="Doctrine\ORM\EntityManagerInterface" alias="doctrine.orm.default_entity_manager" public="false"/>
+    <service id="Doctrine\Common\Persistence\ObjectManager" alias="doctrine.orm.app_entity_manager" public="false"/>
+    <service id="Doctrine\ORM\EntityManagerInterface" alias="doctrine.orm.app_entity_manager" public="false"/>
     <service id="doctrine.orm.metadata.annotation_reader" alias="annotations.cached_reader" public="false"/>
-    <service id="doctrine.orm.entity_manager" alias="doctrine.orm.default_entity_manager" public="true"/>
-    <service id="doctrine.orm.default_metadata_cache" alias="doctrine_cache.providers.doctrine.orm.default_metadata_cache"/>
-    <service id="doctrine.orm.default_result_cache" alias="doctrine_cache.providers.doctrine.orm.default_result_cache"/>
-    <service id="doctrine.orm.default_query_cache" alias="doctrine_cache.providers.doctrine.orm.default_query_cache"/>
-    <service id="doctrine.orm.default_entity_manager.event_manager" alias="doctrine.dbal.default_connection.event_manager" public="false"/>
+    <service id="doctrine.orm.entity_manager" alias="doctrine.orm.app_entity_manager" public="true"/>
+    <service id="doctrine.orm.app_metadata_cache" alias="doctrine_cache.providers.doctrine.orm.app_metadata_cache"/>
+    <service id="doctrine.orm.app_result_cache" alias="doctrine_cache.providers.doctrine.orm.app_result_cache"/>
+    <service id="doctrine.orm.app_query_cache" alias="doctrine_cache.providers.doctrine.orm.app_query_cache"/>
+    <service id="doctrine.orm.app_entity_manager.event_manager" alias="doctrine.dbal.default_connection.event_manager" public="false"/>
     <service id="sensio_framework_extra.converter.doctrine.orm.expression_language" alias="sensio_framework_extra.converter.doctrine.orm.expression_language.default" public="false"/>
     <service id="sensio_framework_extra.security.expression_language" alias="sensio_framework_extra.security.expression_language.default" public="false"/>
     <service id="console.command.doctrine_bundle_doctrinecachebundle_command_containscommand" alias="doctrine_cache.contains_command" public="true"/>
