@@ -156,4 +156,33 @@ class Productos
     {
         return $this->id;
     }
+    /**
+     * @var string
+     */
+    private $categoria;
+
+
+    /**
+     * Set categoria
+     *
+     * @param string $categoria
+     *
+     * @return Productos
+     */
+    public function setCategoria($categoria)
+    {
+        $this->categoria = $categoria;
+
+        return $this;
+    }
+
+    /**
+     * Get categoria
+     *
+     * @return string
+     */
+    public function getCategoria()
+    {
+        return $this->categoria;
+    }
 }

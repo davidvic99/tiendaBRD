@@ -47,4 +47,24 @@ class DefaultController extends Controller
         
         return $this->render('frontal/productos.html.twig', ["producto"=>$productos]);
     }
+
+
+
+    /**
+     * @Route("/productos/{categoria}", name="categoria")
+     */
+    public function tecAction(Request $request,$categoria)
+    {
+    
+        $entityManager = $this->get('doctrine.orm.app_entity_manager');
+    
+        $selectProductos = $entityManager->createQuery(
+            "SELECT i FROM AppBundle:Productos i where i.categoria = '$categoria'"
+        );
+
+        $productos = $selectProductos->getResult();
+
+        
+        return $this->render('frontal/productos.html.twig', ["producto"=>$productos]);
+    }
 }

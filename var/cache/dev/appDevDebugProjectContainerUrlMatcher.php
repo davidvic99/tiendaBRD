@@ -119,9 +119,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::inicioAction',  '_route' => 'inicio',);
         }
 
-        // productos
-        if ('/productos' === $pathinfo) {
-            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::productosAction',  '_route' => 'productos',);
+        if (0 === strpos($pathinfo, '/productos')) {
+            // productos
+            if ('/productos' === $pathinfo) {
+                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::productosAction',  '_route' => 'productos',);
+            }
+
+            // categoria
+            if (preg_match('#^/productos/(?P<categoria>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'categoria')), array (  '_controller' => 'AppBundle\\Controller\\DefaultController::tecAction',));
+            }
+
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
