@@ -22,49 +22,49 @@ class __TwigTemplate_8ed7200cb1b93f7b5f4554789de54dd9bb3f1fea273d6dcc196b73090c8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c88dcb3b07c34428ab78c6decd41cb1f388250a3d492a59f1d1f2872d9d3151e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_c88dcb3b07c34428ab78c6decd41cb1f388250a3d492a59f1d1f2872d9d3151e->enter($__internal_c88dcb3b07c34428ab78c6decd41cb1f388250a3d492a59f1d1f2872d9d3151e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "frontal/productos.html.twig"));
+        $__internal_d50276010bcc4ed905203cde8958269867098f95725f3d5cc76188728e76ad47 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_d50276010bcc4ed905203cde8958269867098f95725f3d5cc76188728e76ad47->enter($__internal_d50276010bcc4ed905203cde8958269867098f95725f3d5cc76188728e76ad47_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "frontal/productos.html.twig"));
 
-        $__internal_9a5a2f2486d6d08de7b1019a8cdf68cc1f39690bdd67c0d004ddc81ff1e592a4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_9a5a2f2486d6d08de7b1019a8cdf68cc1f39690bdd67c0d004ddc81ff1e592a4->enter($__internal_9a5a2f2486d6d08de7b1019a8cdf68cc1f39690bdd67c0d004ddc81ff1e592a4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "frontal/productos.html.twig"));
+        $__internal_6b837ae681a5f541f9269d726863d8bf69b5f5633721927a945c10f110a4ce3b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_6b837ae681a5f541f9269d726863d8bf69b5f5633721927a945c10f110a4ce3b->enter($__internal_6b837ae681a5f541f9269d726863d8bf69b5f5633721927a945c10f110a4ce3b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "frontal/productos.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_c88dcb3b07c34428ab78c6decd41cb1f388250a3d492a59f1d1f2872d9d3151e->leave($__internal_c88dcb3b07c34428ab78c6decd41cb1f388250a3d492a59f1d1f2872d9d3151e_prof);
+        $__internal_d50276010bcc4ed905203cde8958269867098f95725f3d5cc76188728e76ad47->leave($__internal_d50276010bcc4ed905203cde8958269867098f95725f3d5cc76188728e76ad47_prof);
 
         
-        $__internal_9a5a2f2486d6d08de7b1019a8cdf68cc1f39690bdd67c0d004ddc81ff1e592a4->leave($__internal_9a5a2f2486d6d08de7b1019a8cdf68cc1f39690bdd67c0d004ddc81ff1e592a4_prof);
+        $__internal_6b837ae681a5f541f9269d726863d8bf69b5f5633721927a945c10f110a4ce3b->leave($__internal_6b837ae681a5f541f9269d726863d8bf69b5f5633721927a945c10f110a4ce3b_prof);
 
     }
 
     // line 2
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_bf37a9f012cd786fb2c490f2a37a8ec441ba1c226e76700e61e04c7bbc3eac9f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_bf37a9f012cd786fb2c490f2a37a8ec441ba1c226e76700e61e04c7bbc3eac9f->enter($__internal_bf37a9f012cd786fb2c490f2a37a8ec441ba1c226e76700e61e04c7bbc3eac9f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_7ebd6873a68954416f0ba9879cc254915e78974d89f886a8ad043cf855f571be = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_7ebd6873a68954416f0ba9879cc254915e78974d89f886a8ad043cf855f571be->enter($__internal_7ebd6873a68954416f0ba9879cc254915e78974d89f886a8ad043cf855f571be_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        $__internal_2ec11ccde5d255bf881a12ec9d9f216c7aabfa6b98ca8d1ee7d5ba223cf7d8b0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2ec11ccde5d255bf881a12ec9d9f216c7aabfa6b98ca8d1ee7d5ba223cf7d8b0->enter($__internal_2ec11ccde5d255bf881a12ec9d9f216c7aabfa6b98ca8d1ee7d5ba223cf7d8b0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_d51bddce3cae30a502b33581aac40a060b79797cc8b6f18e487a865ac676acc3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d51bddce3cae30a502b33581aac40a060b79797cc8b6f18e487a865ac676acc3->enter($__internal_d51bddce3cae30a502b33581aac40a060b79797cc8b6f18e487a865ac676acc3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         echo "<link =\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/csspropio.css"), "html", null, true);
         echo "\"";
         
-        $__internal_2ec11ccde5d255bf881a12ec9d9f216c7aabfa6b98ca8d1ee7d5ba223cf7d8b0->leave($__internal_2ec11ccde5d255bf881a12ec9d9f216c7aabfa6b98ca8d1ee7d5ba223cf7d8b0_prof);
+        $__internal_d51bddce3cae30a502b33581aac40a060b79797cc8b6f18e487a865ac676acc3->leave($__internal_d51bddce3cae30a502b33581aac40a060b79797cc8b6f18e487a865ac676acc3_prof);
 
         
-        $__internal_bf37a9f012cd786fb2c490f2a37a8ec441ba1c226e76700e61e04c7bbc3eac9f->leave($__internal_bf37a9f012cd786fb2c490f2a37a8ec441ba1c226e76700e61e04c7bbc3eac9f_prof);
+        $__internal_7ebd6873a68954416f0ba9879cc254915e78974d89f886a8ad043cf855f571be->leave($__internal_7ebd6873a68954416f0ba9879cc254915e78974d89f886a8ad043cf855f571be_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_4a784f5c33c956daf61c5e2242481bb443a1a4e841b51513e2f5566287ea3dd8 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_4a784f5c33c956daf61c5e2242481bb443a1a4e841b51513e2f5566287ea3dd8->enter($__internal_4a784f5c33c956daf61c5e2242481bb443a1a4e841b51513e2f5566287ea3dd8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_475c9aeace1d6c16f4fecde8796d9c0f78cc18e787f0128a036744df484ee21f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_475c9aeace1d6c16f4fecde8796d9c0f78cc18e787f0128a036744df484ee21f->enter($__internal_475c9aeace1d6c16f4fecde8796d9c0f78cc18e787f0128a036744df484ee21f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_6ad817275fc29c15438e352e5805dc759799f27c3b4040a70b07b94e5fd703ee = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6ad817275fc29c15438e352e5805dc759799f27c3b4040a70b07b94e5fd703ee->enter($__internal_6ad817275fc29c15438e352e5805dc759799f27c3b4040a70b07b94e5fd703ee_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_9ece65990eec8ab8a759716f7227ec9aff0fbbbcdb88f99f8f9fa3ef0825a67f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_9ece65990eec8ab8a759716f7227ec9aff0fbbbcdb88f99f8f9fa3ef0825a67f->enter($__internal_9ece65990eec8ab8a759716f7227ec9aff0fbbbcdb88f99f8f9fa3ef0825a67f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "
@@ -76,8 +76,8 @@ class __TwigTemplate_8ed7200cb1b93f7b5f4554789de54dd9bb3f1fea273d6dcc196b73090c8
       <div class=\"row\">
         <div class=\"col-md-8 ml-auto mr-auto\">
           <div class=\"brand\">
-            <h1>Tienda de la tripe alianza.</h1>
-            <h3>Esto va a quedar dabutens.</h3>
+            <h1>Productos</h1>
+            <h3>Tienda online.</h3>
           </div>
         </div>
       </div>
@@ -88,7 +88,7 @@ class __TwigTemplate_8ed7200cb1b93f7b5f4554789de54dd9bb3f1fea273d6dcc196b73090c8
       <div class=\"section text-center\">
         <div class=\"row\">
           <div class=\"col-md-8 ml-auto mr-auto\">
-            <h2 class=\"title\">Let&apos;s talk product</h2>
+            <h2 class=\"title\">Hablemos de nuestros productos</h2>
             <h5 class=\"description\">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn&apos;t scroll to get here. Add a button if you want the user to see more.</h5>
           </div>
         </div>
@@ -99,7 +99,7 @@ class __TwigTemplate_8ed7200cb1b93f7b5f4554789de54dd9bb3f1fea273d6dcc196b73090c8
                 <div class=\"icon icon-info\">
                   <i class=\"material-icons\">chat</i>
                 </div>
-                <h4 class=\"info-title\">Free Chat</h4>
+                <h4 class=\"info-title\">Soporte </h4>
                 <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
               </div>
             </div>
@@ -108,16 +108,16 @@ class __TwigTemplate_8ed7200cb1b93f7b5f4554789de54dd9bb3f1fea273d6dcc196b73090c8
                 <div class=\"icon icon-success\">
                   <i class=\"material-icons\">verified_user</i>
                 </div>
-                <h4 class=\"info-title\">Verified Users</h4>
+                <h4 class=\"info-title\">Compra totalmente Segura</h4>
                 <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
               </div>
             </div>
             <div class=\"col-md-4\">
               <div class=\"info\">
                 <div class=\"icon icon-danger\">
-                  <i class=\"material-icons\">fingerprint</i>
+                  <i class=\"material-icons\">query_builder</i>
                 </div>
-                <h4 class=\"info-title\">Fingerprint</h4>
+                <h4 class=\"info-title\">Recibelo al instante!</h4>
                 <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
               </div>
             </div>
@@ -161,7 +161,7 @@ class __TwigTemplate_8ed7200cb1b93f7b5f4554789de54dd9bb3f1fea273d6dcc196b73090c8
             echo "</p>
                   </div>
                   <div class=\"card-footer justify-content-center\">
-                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-twitter\"></i></a>
+                    <a hr ef=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-twitter\"></i></a>
                     <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-instagram\"></i></a>
                     <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-facebook-square\"></i></a>
                   </div>
@@ -182,10 +182,10 @@ class __TwigTemplate_8ed7200cb1b93f7b5f4554789de54dd9bb3f1fea273d6dcc196b73090c8
 
 ";
         
-        $__internal_6ad817275fc29c15438e352e5805dc759799f27c3b4040a70b07b94e5fd703ee->leave($__internal_6ad817275fc29c15438e352e5805dc759799f27c3b4040a70b07b94e5fd703ee_prof);
+        $__internal_9ece65990eec8ab8a759716f7227ec9aff0fbbbcdb88f99f8f9fa3ef0825a67f->leave($__internal_9ece65990eec8ab8a759716f7227ec9aff0fbbbcdb88f99f8f9fa3ef0825a67f_prof);
 
         
-        $__internal_4a784f5c33c956daf61c5e2242481bb443a1a4e841b51513e2f5566287ea3dd8->leave($__internal_4a784f5c33c956daf61c5e2242481bb443a1a4e841b51513e2f5566287ea3dd8_prof);
+        $__internal_475c9aeace1d6c16f4fecde8796d9c0f78cc18e787f0128a036744df484ee21f->leave($__internal_475c9aeace1d6c16f4fecde8796d9c0f78cc18e787f0128a036744df484ee21f_prof);
 
     }
 
@@ -223,8 +223,8 @@ class __TwigTemplate_8ed7200cb1b93f7b5f4554789de54dd9bb3f1fea273d6dcc196b73090c8
       <div class=\"row\">
         <div class=\"col-md-8 ml-auto mr-auto\">
           <div class=\"brand\">
-            <h1>Tienda de la tripe alianza.</h1>
-            <h3>Esto va a quedar dabutens.</h3>
+            <h1>Productos</h1>
+            <h3>Tienda online.</h3>
           </div>
         </div>
       </div>
@@ -235,7 +235,7 @@ class __TwigTemplate_8ed7200cb1b93f7b5f4554789de54dd9bb3f1fea273d6dcc196b73090c8
       <div class=\"section text-center\">
         <div class=\"row\">
           <div class=\"col-md-8 ml-auto mr-auto\">
-            <h2 class=\"title\">Let&apos;s talk product</h2>
+            <h2 class=\"title\">Hablemos de nuestros productos</h2>
             <h5 class=\"description\">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn&apos;t scroll to get here. Add a button if you want the user to see more.</h5>
           </div>
         </div>
@@ -246,7 +246,7 @@ class __TwigTemplate_8ed7200cb1b93f7b5f4554789de54dd9bb3f1fea273d6dcc196b73090c8
                 <div class=\"icon icon-info\">
                   <i class=\"material-icons\">chat</i>
                 </div>
-                <h4 class=\"info-title\">Free Chat</h4>
+                <h4 class=\"info-title\">Soporte </h4>
                 <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
               </div>
             </div>
@@ -255,16 +255,16 @@ class __TwigTemplate_8ed7200cb1b93f7b5f4554789de54dd9bb3f1fea273d6dcc196b73090c8
                 <div class=\"icon icon-success\">
                   <i class=\"material-icons\">verified_user</i>
                 </div>
-                <h4 class=\"info-title\">Verified Users</h4>
+                <h4 class=\"info-title\">Compra totalmente Segura</h4>
                 <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
               </div>
             </div>
             <div class=\"col-md-4\">
               <div class=\"info\">
                 <div class=\"icon icon-danger\">
-                  <i class=\"material-icons\">fingerprint</i>
+                  <i class=\"material-icons\">query_builder</i>
                 </div>
-                <h4 class=\"info-title\">Fingerprint</h4>
+                <h4 class=\"info-title\">Recibelo al instante!</h4>
                 <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
               </div>
             </div>
@@ -291,7 +291,7 @@ class __TwigTemplate_8ed7200cb1b93f7b5f4554789de54dd9bb3f1fea273d6dcc196b73090c8
                     <p class=\"card-description\">{{productos.descripcion}}</p>
                   </div>
                   <div class=\"card-footer justify-content-center\">
-                    <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-twitter\"></i></a>
+                    <a hr ef=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-twitter\"></i></a>
                     <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-instagram\"></i></a>
                     <a href=\"#pablo\" class=\"btn btn-link btn-just-icon\"><i class=\"fa fa-facebook-square\"></i></a>
                   </div>

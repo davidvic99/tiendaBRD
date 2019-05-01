@@ -55,8 +55,7 @@ class DefaultController extends Controller
      */
     public function tecAction(Request $request,$categoria)
     {
-    
-        $entityManager = $this->get('doctrine.orm.app_entity_manager');
+    $entityManager = $this->get('doctrine.orm.app_entity_manager');
     
         $selectProductos = $entityManager->createQuery(
             "SELECT i FROM AppBundle:Productos i where i.categoria = '$categoria'"
